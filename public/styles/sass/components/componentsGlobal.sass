@@ -1,0 +1,164 @@
+@use '../helpers/functions'
+
+#mainHeader
+    padding: 2rem
+    position: fixed
+    z-index: 1000
+    //background: #000
+    //box-shadow: 1px 1px 4px 5px #101010
+    &.home
+        background: #2b2a2b
+        box-shadow:0 .2rem .5rem rgba(0,0,0.4)
+    &.no-home
+        background: #2b2a2b
+        box-shadow:0 .2rem .5rem rgba(0,0,0.4)
+    nav
+        justify-content: space-between
+        #nav-links
+            gap: 2rem
+            li
+                a
+                    font-size: 1.2rem
+                    font-weight: bold
+                    text-shadow: 1px 2px 2px #000
+            #searchFormtop
+                width: 400px
+                height: 28px
+                border: 1px solid #fff
+                input
+                    background: transparent
+                    padding: 0 12px
+                    font-size: 12px
+                    &::placeholder
+                        font-size: 12px !important
+
+#newletter
+    bottom: 1%
+    right: 0.34%
+    max-width: 400px
+    width: 100%
+    background: #fff
+    padding: 2rem
+    .desc
+        h3, p
+            margin-bottom: 6px
+        h3
+            font-size: 17px
+        p
+            font-size: 12px
+            font-weight: bold
+    form
+        display: flex
+        gap: 3px
+        height: 34px
+        input
+            border: 1px solid #111
+            padding: 0 9px
+        button
+            height: 100%
+            font-weight: bold
+
+.containerMessage
+    background: #11111193
+    bottom: 0
+    justify-content: center
+    z-index: 2000
+    &.close
+        display: none
+    #message
+        background: #fff
+        max-width: 400px
+        width: 100%
+        padding: 2rem
+        z-index: 1103
+        text-align: center
+        .desc
+            margin-bottom: 2rem
+            p
+            font-size: 1.5rem
+            background: #14c21477
+            font-weight: bold
+            padding: 1rem
+        .close
+            padding: 1.2rem 2rem
+            font-size: 1.3rem
+            font-weight: bold
+            background: #ffee00
+    .svg
+        height: 234px
+        margin-bottom: 1rem
+
+//funcionalidades
+.logo
+    a
+        font-size: 2rem
+        font-weight: bold
+.bt-login
+    color: #111 !important
+    font-weight: bold !important
+    padding: 7px 12px
+    background: #ffee00
+    text-shadow: none !important
+
+.danger
+    background: #ff00008e
+    padding: 6px
+    &.create
+        margin: 7px 0
+#msinFooter
+    padding: 2rem
+    background: #2b2a2b
+    text-align: center
+    a,p
+        font-size: 1.5rem
+    .linksocial
+        margin-top: 1rem
+        gap: 1rem
+        justify-content: center
+
+//senteces
+#mainHeader nav,
+#mainHeader nav #nav-links,
+#msinFooter .linksocial,
+.containerMessage
+    display: flex
+    align-items: center
+
+#newletter,
+.containerMessage #message
+    box-shadow: 1px 1px 4px 5px #10101021
+
+#mainHeader,
+#newletter,
+.containerMessage
+    position: fixed
+
+
+svg
+    width: 1.3rem
+    font-weight: bold
+.flex-1, .hidden  div:first-child
+    display: none
+.hidden  div:last-child
+    margin-top: 1.5rem
+    span
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 1.5rem
+        a
+            font-weight: bold
+            color: #111
+            padding: 5px 8px
+            font-size: 1.3rem
+            border: 1px solid #111
+
+.cursor-default
+    background: #ffee00
+    font-size: 1.3rem
+    font-weight: bold
+    padding: 5px 8px
+    border: 1px solid #111
+
+.blue
+    background: #445db1
